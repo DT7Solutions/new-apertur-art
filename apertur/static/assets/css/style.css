@@ -1,0 +1,58 @@
+
+ /* .main-header {
+    background: transparent !important;    
+
+}  */
+.nav-active {
+    background-color: rgba(58, 58, 58, 0.8);
+  }
+ 
+.logo img{
+    margin-top: -22px !important;
+}
+
+.nav-bg-color.scrolled{
+     background-color: white;
+}
+
+.about-content .about-text{
+    color: white !important;
+    float: right !important;
+}
+.why-us figure img{
+    height: 400px !important;
+    width: 100% !important;
+    border-radius: 4px;
+    text-align: justify;
+}
+.jewellery-section{
+    margin-top: -100px !important;
+}
+.f_B-section{
+    margin-top: -100px !important;
+}
+
+#contact .form-control{
+    border-radius: 5px !important;
+}
+#form-submit{
+    /* background-color: black; */
+    color: white !important;
+    border-radius: 5px !important;
+    background: transparent;
+    border: 2px solid whitesmoke;
+}
+#form-submit:hover{
+    background: linear-gradient(45deg, #e63785 0%, #60c5e0 100%);
+    color: white !important;
+    border-radius: 5px !important;
+    border: 2px solid whitesmoke;
+}
+
+.header-text h2{
+    font-size: 72px;
+  background: -webkit-linear-gradient(90deg, rgba(198,53,112,1) 5%, rgba(156,100,148,0.9304096638655462) 54%, rgba(70, 108, 163, 0.967) 94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+}
