@@ -319,7 +319,7 @@ a.menu-link { display: none; }
 
 .video-overlay {
     position: absolute;
-    background-color: rgba(3, 3, 3, 0.85);
+    /* background-color: rgba(3, 3, 3, 0.85); */
     top: 0;
     left: 0;
     bottom: 7px;
@@ -1601,3 +1601,4 @@ footer p a:hover {
     letter-spacing: 0.25px;
   }
 }
+

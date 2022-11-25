@@ -32,3 +32,12 @@ class FB(models.Model):
         Image = models.ImageField(upload_to='uploads/')
         def __str__(self):
             return self.Title
+
+
+class Contact(models.Model):
+            Name=models.CharField(max_length=100)
+            Email=models.EmailField()
+            Subject = models.CharField(max_length=50)
+            Message = models.CharField(max_length=500)
+            def __str__(self):
+                return self.Name

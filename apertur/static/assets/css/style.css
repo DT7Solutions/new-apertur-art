@@ -41,6 +41,7 @@
     border-radius: 5px !important;
     background: transparent;
     border: 2px solid whitesmoke;
+    
 }
 #form-submit:hover{
     background: linear-gradient(45deg, #e63785 0%, #60c5e0 100%);
@@ -55,4 +56,25 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.service-list .card{
+    background-color: #60c5e0 !important;
+    height: 100px !important;
+    margin-left: 10px !important;
+    text-align: center !important;
+    font-weight: 600;
+}
+.service-list .card:hover{
+    background-image: linear-gradient(to right, rgba(198,53,112,1)5%,rgba(156,100,148,0.9304096638655462)54%,rgba(70, 108, 163, 0.967)94%);
+    color: whitesmoke;
+}
+.service-list2 .card{
+    background-color: #60c5e0 !important;
+    height: 100px !important;
+    margin-left: 10px !important;
+    text-align: center !important;
+}
+.service-list2 .card:hover{
+    background-image: linear-gradient(to right, rgba(198,53,112,1)5%,rgba(156,100,148,0.9304096638655462)54%,rgba(70, 108, 163, 0.967)94%);
+    color: whitesmoke;
 }
