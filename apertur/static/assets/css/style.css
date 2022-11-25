@@ -1,10 +1,10 @@
 
  /* .main-header {
-    background: transparent !important;    
-
+    background-color: rgba(253, 252, 252, 0.8);
 }  */
 .nav-active {
-    background-color: rgba(58, 58, 58, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 500;
   }
  
 .logo img{
@@ -56,6 +56,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.header-text h5{
+ color: rgb(9, 95, 145);
+ margin-top: -25px !important;
+ margin-bottom: 20px !important;
+}
+
 
 .service-list .card{
     background-color: #60c5e0 !important;
@@ -78,3 +84,4 @@
     background-image: linear-gradient(to right, rgba(198,53,112,1)5%,rgba(156,100,148,0.9304096638655462)54%,rgba(70, 108, 163, 0.967)94%);
     color: whitesmoke;
 }
+
