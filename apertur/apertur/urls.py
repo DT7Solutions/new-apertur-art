@@ -23,3 +23,4 @@ urlpatterns = [
     path('', include('apertur_app.urls'))
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+handler404 = "apertur_app.views.page_not_found_view"

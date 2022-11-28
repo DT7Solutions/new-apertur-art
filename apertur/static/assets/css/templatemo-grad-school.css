@@ -1637,3 +1637,13 @@ footer p a:hover {
     color: #2980b9;
   }
 }
+
+
+
+.sub-text h5 {
+  color: white;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 45px;
+}

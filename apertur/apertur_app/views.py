@@ -35,3 +35,5 @@ def home(request):
 
     return render(request, 'uifiles/index.html',{'sliding_item1':sliding_item1,'sliding_item2':sliding_item2,'sliding_item3':sliding_item3,'banner_video':banner_video})
 
+def page_not_found_view(request, exception):
+    return render(request, 'uifiles/404.html', status=404)
