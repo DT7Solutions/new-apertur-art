@@ -1542,8 +1542,13 @@ section.contact form button {
 /* Footer */
 
 footer {
-    background-color: #152036;
+    background-color: rgb(22, 22, 22);
     text-align: center;
+    
+    
+}
+.footer .foo-hr {
+  color: rgb(136, 12, 12) !important;
 }
 
 footer p {
@@ -1646,4 +1651,37 @@ footer p a:hover {
   text-align: center;
   margin-top: -50px;
   margin-bottom: 45px;
+}
+
+.sub-form input{
+  background: transparent !important;
+  border: none !important;
+  border-bottom:  2px solid white !important;
+}
+.sub-form .btn {
+  color: white !important;
+ border: 1px solid white !important;
+}
+.sub-form label {
+  font-size: 12px !important;
+  border-bottom: 1px solid white !important;
+  padding: 4px !important;
+}
+.get-in span {
+  font-weight: 600;
+}
+.get-in span:hover{ 
+   color:#C63478 ;
+}
+
+.find-us p:hover{
+  color:#C63478 ;
+}
+
+@media screen and (max-width: 459px) {
+  .footer-section11{
+    padding: 15px !important;
+  
+  }
+
 }

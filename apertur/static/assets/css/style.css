@@ -87,3 +87,28 @@
     color: whitesmoke;
 }
 
+
+.footer-section{
+    background-color: black !important;
+    height: 60vh !important;
+    color: whitesmoke !important;
+  }
+
+  .social-links{
+    display: flex;
+    /* justify-content: center;
+    align-items: center !important; */
+    flex-direction: row;
+    padding: 10px !important;
+  }
+
+  .social-links .fab {
+    font-size: 35px !important;
+    margin-right: 20px !important;
+  }
+  .social-links .fab:hover{
+    color: #af1072;
+  }
+  .fa-facebook {
+    margin-left: -20px !important;
+  }
