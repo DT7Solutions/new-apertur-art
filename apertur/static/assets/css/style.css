@@ -3,17 +3,19 @@
     background-color: rgba(253, 252, 252, 0.8);
 }  */
 .nav-active {
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: 500;
+    background-color:#fff !important;
+    
+    z-index: 10000;
   }
  
 .logo img{
     margin-top: -22px !important;
 }
 
-.nav-bg-color.scrolled{
-     background-color: white;
-}
+/* .nav-bg-color.scrolled{
+     background-color: white !important;
+
+} */
 
 .about-content .about-text{
     color: white !important;

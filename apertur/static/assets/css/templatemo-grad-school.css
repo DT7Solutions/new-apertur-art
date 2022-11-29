@@ -172,8 +172,8 @@ a.menu-link { display: none; }
 }
 
 .main-header {
-    /* background-color: rgba(22,34,57,0.95); */
-    background: transparent;
+    /* background-color: rgba(5, 12, 26, 0.95); */
+    /* background: transparent; */
     height: 80px;
     position: fixed;
     z-index: 12;
