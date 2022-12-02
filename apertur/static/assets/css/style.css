@@ -103,7 +103,7 @@
   }
 
   .social-links .fab {
-    font-size: 35px !important;
+    font-size: 25px !important;
     margin-right: 20px !important;
   }
   .social-links .fab:hover{
@@ -155,4 +155,14 @@
 
   .footer-section11 .sec-1,.sec-2,.sec-3 {
   padding-top: 20px !important;
+  }
+
+  .sec-2 span a {
+    color:  #fff !important;
+  }
+  .sec-2 span:hover a:hover {
+    color:rgba(198,53,112,1) !important;
+  }
+  .sec-3 .whates:hover {
+    color:rgba(198,53,112,1) !important;
   }

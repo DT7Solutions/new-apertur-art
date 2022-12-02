@@ -27,7 +27,7 @@ def home(request):
         From:{}
         '''.format(subject,message,email)
         try:
-            send_mail(subject, message,'noreplaybadugudinesh94@gmail.com',recipient_list=['aperturart@gmail.com']) 
+            send_mail(subject, message,'noreplayaperturart@gmail.com',recipient_list=['aperturart@gmail.com','CONNECT@MAGSMEN.IN']) 
             messages.success(request,sucess)
         except:
             messages.error(request,'your emsil sending fail')
@@ -39,7 +39,7 @@ def home(request):
         # message = 'subscribe'
         subject ="subscribe"
         try:
-            send_mail(subject,'noreplaybadugudinesh94@gmail.com',recipient_list=['aperturart@gmail.com']) 
+            send_mail(subject,'noreplayaperturart@gmail.com',recipient_list=['aperturart@gmail.com','CONNECT@MAGSMEN.IN']) 
             messages.success(request,sucess)
         except:
             messages.error(request,'your emsil sending fail')
