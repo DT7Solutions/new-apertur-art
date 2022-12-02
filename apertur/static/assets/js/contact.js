@@ -33,7 +33,7 @@ contactform.addEventListener('submit', function(event){
 
 
 let subscribeform = document.querySelector('#subscribe_form');
-contactform.addEventListener('submit', function(event){
+subscribeform.addEventListener('submit', function(event){
           event.preventDefault();
           $.ajax({
             type:'POST',
