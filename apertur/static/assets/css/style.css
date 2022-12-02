@@ -108,7 +108,51 @@
   }
   .social-links .fab:hover{
     color: #af1072;
+    transform: scale(1.1);
+    transition: 0.5s;
   }
   .fa-facebook {
     margin-left: -20px !important;
+  }
+  .footer-col-1  h2{
+    font-weight: 800;
+    color: #af1072 !important;
+    
+  }
+  .footer-col-1  h3{
+    font-weight: 600;
+  }
+
+  .subscripe-labele {
+    margin-top: -10px !important;
+    margin-bottom: -10px !important;
+  }
+  .sub-form button:hover{
+    background-image: linear-gradient(to right, rgba(198,53,112,1)5%,rgba(156,100,148,0.9304096638655462)54%,rgba(70, 108, 163, 0.967)94%);
+    color: whitesmoke !important;
+
+    transition: opacity 250ms 300ms;
+    
+  } 
+
+  .find-us .map_link a {
+    color: #fff;
+  }
+  .find-us .map_link a:hover {
+    color:rgba(198,53,112,1);
+  }
+  .find-us a{
+    color: whitesmoke;
+  }
+  /* .find-us a:hover{
+    color:rgba(198,53,112,1);
+  } */
+  .fa-whatsapp {
+    color: rgb(18, 94, 18);
+    font-weight: 600;
+    font-size: 25px !important;
+  }
+
+  .footer-section11 .sec-1,.sec-2,.sec-3 {
+  padding-top: 20px !important;
   }

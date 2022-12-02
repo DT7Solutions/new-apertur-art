@@ -27,7 +27,19 @@ def home(request):
         From:{}
         '''.format(subject,message,email)
         try:
-            send_mail(subject, message,'noreplaybadugudinesh94@gmail.com',recipient_list=['badugudinesh94@gmail.com']) 
+            send_mail(subject, message,'noreplaybadugudinesh94@gmail.com',recipient_list=['aperturart@gmail.com']) 
+            messages.success(request,sucess)
+        except:
+            messages.error(request,'your emsil sending fail')
+
+    # subscribe  form submission  
+    if request.method == "POST":
+        email = request.POST.get('email',"")
+        sucess =f'hi {name} sucessfully Sending email'
+        # message = 'subscribe'
+        subject ="subscribe"
+        try:
+            send_mail(subject,'noreplaybadugudinesh94@gmail.com',recipient_list=['aperturart@gmail.com']) 
             messages.success(request,sucess)
         except:
             messages.error(request,'your emsil sending fail')

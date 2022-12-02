@@ -300,6 +300,8 @@ https://templatemo.com/tm-557-grad-school
                   <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
                 </fieldset>
               </div>
+              <script src='https://www.google.com/recaptcha/api.js'></script>
+              <div class="g-recaptcha px-3" data-sitekey="6Lfgj00jAAAAAC0giK_HzP_y-WdN4CrYTbz67og1" required></div>
               <div class="col-md-12">
                 <fieldset class="d-flex justify-content-center align-items-center">
                   <button type="submit" id="form-submit" class="button">Send Message Now</button>
@@ -321,19 +323,20 @@ https://templatemo.com/tm-557-grad-school
   <section class="section footer-section11" style="background-color:black ; color:whitesmoke">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-12 col-lg-4">
-         <h2>Turning Business into Brand</h2>
+        <div class="col-md-5 col-sm-12 col-lg-4 sec-1">
+         <h2 class="footer-col-1">Turning Business into Brand</h2>
          <h3>Newsletter</h3>
          <p>Be the first one to learn about the news we break, projects we crack and collaborations we invite.</p>
          <div>
-          <form action="" class="sub-form">
+          <form action="" class="sub-form" method="post" id="subscribe_form">
+            {% csrf_token %}
             <input type="email" class="form-control" placeholder="Your Email" ><br/>
-            <label for="">Your email is safe with us. We respect confidentiality and despise spam just as much as you do.</label>
-            <button type="submit" class="btn mb-5 mt-3">SUBSCRIBE</button>
+            <label for="" class="pb-5 subscripe-labele">Your email is safe with us. We respect confidentiality and despise spam just as much as you do.</label>
+            <button type="submit" class="btn mb-5 mt-3 subscrib_btn">SUBSCRIBE</button>
           </form>
          </div>
         </div>
-        <div class="col-md-4 col-sm-12 col-lg-4 get-in">
+        <div class="col-md-3 col-sm-12 col-lg-4 get-in px-5 sec-2 ">
           <h3>Get in Touch</h3>
           <span>Business</span><br/>
           <span>CONNECT@MAGSMEN.IN</span><br/>
@@ -357,13 +360,13 @@ https://templatemo.com/tm-557-grad-school
               </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 col-lg-4 find-us">
+        <div class="col-md-4 col-sm-12 col-lg-4 find-us sec-3">
           <h3 class="mb-3">Find us</h3>
-          <a href="https://wa.me/+919044910449?text=I'm%20interested%20in%20your%20car%20for%20sale"><img src="" alt=""><i class="fab fa fa-brands fa-whatsapp mt-1 mb-2"></i> Whatsapp Us</a>
+          <a class="whates" href="https://wa.me/+919044910449?text=I'm%20interested%20in%20your%20car%20for%20sale"><i class="fab fa fa-brands fa-whatsapp mt-1 mb-2"></i> Whatsapp Us</a>
           <h3>Registered Address</h3>
           <p style="font-size: 16px !important;">Ananthavarapu Road, Etukuru, Guntur (Dist) Andhra Pradesh (State) India – 522017</p>
           <h3>Regional Address</h3>
-          <p>#211,212 AP COTTON ASSOCIATION BUILDING, OPP AVANTRA JEWELS, LAKSHMIPURAM MAIN ROAD, GUNTUR, ANDHRA PRADESH, 522007</p>
+          <p class="map_link"><a href="https://www.google.co.in/maps/place/MAGSMEN+-+Brand+consulting+firm+%7C+social+media+agency/@16.3114465,80.4254215,17z/data=!3m1!4b1!4m5!3m4!1s0x3a4a755aed1edb2d:0xf0fcdfb624d11870!8m2!3d16.3114414!4d80.4276102?hl=en&coh=164777&entry=tt&shorturl=1">#211,212 AP COTTON ASSOCIATION BUILDING, OPP AVANTRA JEWELS, LAKSHMIPURAM MAIN ROAD, GUNTUR, ANDHRA PRADESH, 522007</a></p>
         </div>
       </div>
     </div>
