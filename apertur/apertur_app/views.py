@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import FMCG,Jewellery, FB,Banner_video,Contact
+from .models import FMCG,Jewellery, FB,Banner_video,Contact,Jewelegance
 from django.contrib import messages
 from django.core.mail import send_mail
 # Create your views here.
@@ -8,6 +8,7 @@ def home(request):
     sliding_item2 = Jewellery.objects.all()
     sliding_item3 = FB.objects.all()
     banner_video = Banner_video.objects.all()
+    sliding_item4 = Jewelegance.objects.all()
     
     
     # Contact us  form submission  
@@ -45,7 +46,7 @@ def home(request):
     #         messages.error(request,'your emsil sending fail')
     
 
-    return render(request, 'uifiles/index.html',{'sliding_item1':sliding_item1,'sliding_item2':sliding_item2,'sliding_item3':sliding_item3,'banner_video':banner_video})
+    return render(request, 'uifiles/index.html',{'sliding_item1':sliding_item1,'sliding_item2':sliding_item2,'sliding_item3':sliding_item3,'sliding_item4':sliding_item4,'banner_video':banner_video})
 
 def page_not_found_view(request, exception):
     return render(request, 'uifiles/404.html', status=404)

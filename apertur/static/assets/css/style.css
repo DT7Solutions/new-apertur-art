@@ -67,7 +67,7 @@
 
 .service-list .card{
     background-color: #60c5e0 !important;
-    height: 100px !important;
+    min-height: 250px !important;
     margin-left: 10px !important;
     text-align: center !important;
     font-weight: 600;
@@ -78,7 +78,7 @@
 }
 .service-list2 .card{
     background-color: #60c5e0 !important;
-    height: 100px !important;
+    height: 250px !important;
     margin-left: 10px !important;
     text-align: center !important;
 }
@@ -153,9 +153,9 @@
     font-size: 25px !important;
   }
 
-  .footer-section11 .sec-1,.sec-2,.sec-3 {
-  padding-top: 20px !important;
-  }
+  /* .footer-section11 .sec-1,.sec-2,.sec-3 {
+  padding-top: min(-20px) !important;
+  } */
 
   .sec-2 span a {
     color:  #fff !important;
@@ -166,3 +166,55 @@
   .sec-3 .whates:hover {
     color:rgba(198,53,112,1) !important;
   }
+
+
+
+  
+/* @media screen and (max-width: 450px) {
+  .service-list .card{
+    width: 24rem !important;
+  }
+
+} */
+
+/*
+flip card
+*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+  background-color: #60c5e0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(to right, rgba(198,53,112,1)5%,rgba(156,100,148,0.9304096638655462)54%,rgba(70, 108, 163, 0.967)94%);
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+.card-flip .card-title {
+  color: #ffffff;
+  font-weight: 600;
+
+}

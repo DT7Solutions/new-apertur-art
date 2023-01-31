@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import FMCG,FB,Jewellery,Banner_video,Contact
+from .models import FMCG,FB,Jewellery,Banner_video,Contact,Jewelegance
 # Register your models here.
 class  AdminBanner_video(admin.ModelAdmin):
     list_display=('Id','Title','Video')
@@ -14,6 +14,8 @@ class  AdminJewellery(admin.ModelAdmin):
 class  AdminFb(admin.ModelAdmin):
     list_display=('Id','Title','Image')
 
+class  AdminJewelegance(admin.ModelAdmin):
+    list_display=('Id','Title','Image')
 
 class  AdminContact(admin.ModelAdmin):
     list_display=('Name','Email','Subject','Message')
@@ -24,4 +26,5 @@ admin.site.register(Banner_video,AdminBanner_video)
 admin.site.register(FMCG,AdminFmcg)
 admin.site.register(Jewellery,AdminJewellery)
 admin.site.register(FB,AdminFb)
+admin.site.register(Jewelegance,AdminJewelegance)
 admin.site.register(Contact,AdminContact)
